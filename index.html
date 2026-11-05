@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GameZone: catálogo interactivo de videojuegos" />
+    <title>GameZone | Catálogo de videojuegos</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="/" aria-label="GameZone - inicio">
+          <span class="brand-icon" aria-hidden="true">🎮</span>
+          <span>Game<span class="brand-accent">Zone</span></span>
+        </a>
+        <p class="header-subtitle">Tu catálogo de videojuegos</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Explora · Filtra · Descubre</p>
+          <h1 id="page-title">Catálogo de videojuegos</h1>
+          <p class="intro-description">Encuentra tu próxima aventura entre nuestros títulos.</p>
+        </div>
+        <div class="summary" aria-live="polite">
+          <span class="summary-number" id="games-count">0</span>
+          <span class="summary-label">videojuegos encontrados</span>
+        </div>
+      </section>
+
+      <section class="filters-panel" aria-labelledby="filters-title">
+        <h2 id="filters-title" class="section-title">Buscar y filtrar</h2>
+        <div class="filters-grid">
+          <div class="field field-search">
+            <label for="search-input">Buscar por título</label>
+            <input id="search-input" type="search" placeholder="Ej.: Hollow Knight" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="genre-filter">Género</label>
+            <select id="genre-filter">
+              <option value="all">Todos los géneros</option>
+              <!-- Las demás opciones podrán generarse con JavaScript. -->
+            </select>
+          </div>
+          <div class="field">
+            <label for="sort-select">Ordenar por</label>
+            <select id="sort-select">
+              <option value="default">Orden original</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="rating-desc">Mejor valoración</option>
+            </select>
+          </div>
+        </div>
+        <div class="filters-footer">
+          <label class="checkbox-label" for="available-only">
+            <input type="checkbox" id="available-only" />
+            Mostrar solo disponibles
+          </label>
+          <button type="button" id="reset-filters" class="button button-secondary">Limpiar filtros</button>
+        </div>
+      </section>
+
+      <section class="catalog-section" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <h2 id="catalog-title">Videojuegos</h2>
+          <p id="catalog-message" class="catalog-message" aria-live="polite"></p>
+        </div>
+        <!-- El alumnado deberá generar las tarjetas dinámicamente dentro de este contenedor. -->
+        <div id="games-container" class="games-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>No se han encontrado videojuegos con estos criterios.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">GameZone · Proyecto de JavaScript vanilla y Vite</div>
+    </footer>
+  </body>
+</html>

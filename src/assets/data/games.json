@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Hollow Knight",
+    "genre": "Aventura",
+    "platform": "PC",
+    "price": 14.99,
+    "rating": 9.2,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 2,
+    "title": "Stardew Valley",
+    "genre": "Simulación",
+    "platform": "PC",
+    "price": 13.99,
+    "rating": 9.5,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 3,
+    "title": "Celeste",
+    "genre": "Plataformas",
+    "platform": "Switch",
+    "price": 19.99,
+    "rating": 9.0,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 4,
+    "title": "Portal 2",
+    "genre": "Puzles",
+    "platform": "PC",
+    "price": 9.99,
+    "rating": 9.4,
+    "available": false,
+    "favorite": false
+  },
+  {
+    "id": 5,
+    "title": "Hades",
+    "genre": "Acción",
+    "platform": "PC",
+    "price": 24.99,
+    "rating": 9.3,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 6,
+    "title": "Ori and the Blind Forest",
+    "genre": "Plataformas",
+    "platform": "Xbox",
+    "price": 19.99,
+    "rating": 8.9,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 7,
+    "title": "Minecraft",
+    "genre": "Sandbox",
+    "platform": "PC",
+    "price": 29.99,
+    "rating": 9.1,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 8,
+    "title": "Terraria",
+    "genre": "Sandbox",
+    "platform": "PC",
+    "price": 9.99,
+    "rating": 9.0,
+    "available": false,
+    "favorite": false
+  },
+  {
+    "id": 9,
+    "title": "Cuphead",
+    "genre": "Plataformas",
+    "platform": "Switch",
+    "price": 19.99,
+    "rating": 8.8,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 10,
+    "title": "Dead Cells",
+    "genre": "Acción",
+    "platform": "PC",
+    "price": 24.99,
+    "rating": 8.9,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 11,
+    "title": "The Witness",
+    "genre": "Puzles",
+    "platform": "PlayStation",
+    "price": 36.99,
+    "rating": 8.5,
+    "available": false,
+    "favorite": false
+  },
+  {
+    "id": 12,
+    "title": "Slay the Spire",
+    "genre": "Estrategia",
+    "platform": "PC",
+    "price": 22.99,
+    "rating": 9.2,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 13,
+    "title": "Undertale",
+    "genre": "Rol",
+    "platform": "Switch",
+    "price": 14.99,
+    "rating": 9.1,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 14,
+    "title": "Factorio",
+    "genre": "Estrategia",
+    "platform": "PC",
+    "price": 32.0,
+    "rating": 9.6,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 15,
+    "title": "Spiritfarer",
+    "genre": "Simulación",
+    "platform": "Switch",
+    "price": 29.99,
+    "rating": 8.7,
+    "available": false,
+    "favorite": false
+  },
+  {
+    "id": 16,
+    "title": "Disco Elysium",
+    "genre": "Rol",
+    "platform": "PC",
+    "price": 39.99,
+    "rating": 9.3,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 17,
+    "title": "Overcooked! 2",
+    "genre": "Simulación",
+    "platform": "PlayStation",
+    "price": 24.99,
+    "rating": 8.4,
+    "available": true,
+    "favorite": false
+  },
+  {
+    "id": 18,
+    "title": "Into the Breach",
+    "genre": "Estrategia",
+    "platform": "Switch",
+    "price": 14.99,
+    "rating": 8.8,
+    "available": true,
+    "favorite": false
+  }
+]
