@@ -1,8 +1,12 @@
 import "./style.css";
 import games from "./assets/data/games.json";
 
-games.forEach((game) => {
-  console.log(game.title);
+const gamesContainter = document.querySelector("#games-container");
+
+const genreSelect = document.querySelector("select");
+let gamesFiltered = [];
+
+const createGameCard = (gamesContainter, game) => {
   let cardGame = document.createElement("article");
   cardGame.classList.add("game-card");
   let cardGameImg = document.createElement("img");
@@ -21,5 +25,26 @@ games.forEach((game) => {
   cardGameRating.textContent = game.rating;
   cardContainerInfo.append(cardGameGenre, cardGamePlatform, cardGameRating);
   cardGame.append(cardGameImg, cardGameTitle, cardContainerInfo);
-  document.querySelector("#games-container").appendChild(cardGame);
+  gamesContainter.appendChild(cardGame);
+};
+
+const createOption = (genreSelect, game) => {
+  let option = document.createElement("option");
+  option.value = game.genre;
+  option.textContent = game.genre;
+  genreSelect.appendChild(option);
+};
+
+games.forEach((game) => {
+  createGameCard(gamesContainter, game);
+  createOption(genreSelect, game);
+});
+
+genreSelect.addEventListener("change", (event) => {
+  const selectedGenre = event.target.value;
+  gamesFiltered = games.filter((game) => game.genre === selectedGenre);
+  gamesContainter.textContent = "";
+  gamesFiltered.forEach((game) => {
+    createGameCard(gamesContainter, game);
+  });
 });
