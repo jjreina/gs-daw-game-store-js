@@ -1,0 +1,22 @@
+export const createGameCard = (game) => {
+  const cardGame = document.createElement("article");
+  cardGame.classList.add("game-card");
+  const cardGameImg = document.createElement("img");
+  cardGameImg.src = game.image;
+  cardGameImg.alt = game.title;
+  cardGameImg.classList.add("game-image");
+  const cardGameTitle = document.createElement("h3");
+  cardGameTitle.classList.add("game-title");
+  cardGameTitle.textContent = game.title;
+  const cardContainerInfo = document.createElement("div");
+  cardContainerInfo.classList.add("game-meta");
+  const cardGameGenre = document.createElement("span");
+  cardGameGenre.textContent = game.genre;
+  const cardGamePlatform = document.createElement("span");
+  cardGamePlatform.textContent = game.platform;
+  const cardGameRating = document.createElement("span");
+  cardGameRating.textContent = game.rating;
+  cardContainerInfo.append(cardGameGenre, cardGamePlatform, cardGameRating);
+  cardGame.append(cardGameImg, cardGameTitle, cardContainerInfo);
+  return cardGame;
+};
