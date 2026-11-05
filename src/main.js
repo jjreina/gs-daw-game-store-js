@@ -2,8 +2,8 @@ import "./style.css";
 import games from "./assets/data/games.json";
 
 const gamesContainter = document.querySelector("#games-container");
-
 const genreSelect = document.querySelector("select");
+
 let gamesFiltered = [];
 
 const createGameCard = (gamesContainter, game) => {
@@ -28,16 +28,8 @@ const createGameCard = (gamesContainter, game) => {
   gamesContainter.appendChild(cardGame);
 };
 
-const createOption = (genreSelect, game) => {
-  let option = document.createElement("option");
-  option.value = game.genre;
-  option.textContent = game.genre;
-  genreSelect.appendChild(option);
-};
-
 games.forEach((game) => {
   createGameCard(gamesContainter, game);
-  createOption(genreSelect, game);
 });
 
 genreSelect.addEventListener("change", (event) => {
