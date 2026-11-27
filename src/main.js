@@ -8,7 +8,7 @@ const genreSelect = document.querySelector("select");
 const rederGames = (gamesToRender) => {
   gamesContainer.textContent = "";
   gamesToRender.forEach((game) => {
-    gamesContainer.appendChild(createGameCard(game));
+    gamesContainer.append(createGameCard(game));
   });
 };
 
